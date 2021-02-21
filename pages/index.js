@@ -1,65 +1,145 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import CardWave from "../src/components/CardWave/CardWave";
+import styles from "../styles/Home.module.css";
+import CardLogo from "../src/components/CardLogo/CardLogo";
+import ContactUsFooter from "./../src/components/ContactUsFooter/ContactUsFooter";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+      <div className={styles.hero}>
+        <div className={styles.wave}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+            preserveAspectRatio="xMidYMax slice"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <path
+              fill="#fff"
+              fillOpacity="1"
+              d="M0,128L80,138.7C160,149,320,171,480,160C640,149,800,107,960,101.3C1120,96,1280,128,1360,144L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path>
+          </svg>
         </div>
-      </main>
+      </div>
+      {/* <br></br> */}
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <div className={styles.mainContent}>
+        <div className={styles.logoHeader}>
+          <img src="logo.png"></img>
+          <div>ICE DREAMS</div>
+        </div>
+        <div className={styles.tagline}>
+          <div>online ice cream parlour</div>
+        </div>
+
+        <div className={styles.gridParent}>
+          <div className={styles.gridChild}>
+            <CardWave
+              cardTitle="swirls"
+              imageSrc="./product2.png"
+              waveColor="#5000ca"
+            />
+          </div>
+          <div className={styles.gridChild}>
+            <CardWave
+              cardTitle="sundaes"
+              imageSrc="./product3.png"
+              waveColor="#5000ca"
+            />
+          </div>
+          <div className={styles.gridChild}>
+            <CardWave
+              cardTitle="waffles"
+              imageSrc="./product4.png"
+              waveColor="#5000ca"
+            />
+          </div>
+          <div className={styles.gridChild}>
+            <CardWave
+              cardTitle="soft serve"
+              imageSrc="./product1.png"
+              waveColor="#5000ca"
+            />
+          </div>
+        </div>
+
+        <div className={styles.tagline}>
+          <h4>our partners</h4>
+        </div>
+        <div className={styles.grid2Parent}>
+          <div className={styles.grid2Child}>
+            <CardLogo
+              cardTitle="nestle"
+              imageLogo="./brand1.png"
+              imageCover="./photo11.jpg"
+              waveColor="#d81e36"
+              bodyText="This website is built using React and is bootstrapped with NextJS. Styling is done using standard CSS. Card components are re-usable React functional components."
+            />
+          </div>
+          <div className={styles.grid2Child}>
+            <CardLogo
+              cardTitle="cadbury"
+              imageLogo="./brand2.png"
+              imageCover="./photo13.jpg"
+              waveColor="#482683"
+              bodyText="This is a re-usable React functional card component, custom built from zero. Customizable inputs are svg wave header and footer colors, brand logo image, card background image, card title and this text."
+            />
+          </div>
+          <div className={styles.grid2Child}>
+            <CardLogo
+              cardTitle="aero"
+              imageLogo="./brand3.png"
+              imageCover="./photo12.jpg"
+              waveColor="#6c3d26"
+              bodyText="Brand logos are being used for non commercial purposes only. This is a private project for learning web development only. This website is not for commercial use."
+            />
+          </div>
+        </div>
+        <div className={styles.tagline}>
+          <h4>contact us</h4>
+        </div>
+      </div>
+      <ContactUsFooter />
+
+      <h3>2021 Web Dev Project Concept only, by AG</h3>
+      <p>This is not a real website!!!!</p>
+      <p>
+        Laborum cupidatat voluptate eu esse ad proident veniam anim voluptate.
+        Excepteur eu voluptate amet in deserunt aute cillum. Ad Lorem
+        exercitation pariatur quis deserunt commodo cillum qui tempor deserunt
+        est officia esse.
+      </p>
+      <div className={styles.footer}>
+        <div className={styles.wave}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#fff"
+              fillOpacity="1"
+              d="M0,128L80,138.7C160,149,320,171,480,160C640,149,800,107,960,101.3C1120,96,1280,128,1360,144L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+
+        <div className={styles.wave}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#5000ca"
+              fillOpacity="0.1"
+              d="M0,32L48,37.3C96,43,192,53,288,101.3C384,149,480,235,576,240C672,245,768,171,864,154.7C960,139,1056,181,1152,197.3C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+
+        <div className={styles.wave}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#5000ca"
+              fillOpacity="0.2"
+              d="M0,32L60,58.7C120,85,240,139,360,154.7C480,171,600,149,720,144C840,139,960,149,1080,128C1200,107,1320,53,1380,26.7L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
