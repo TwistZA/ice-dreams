@@ -28,7 +28,7 @@ export default function Home() {
           <div>ICE DREAMS</div>
         </div>
         <div className={styles.tagline}>
-          <div>online ice cream parlour</div>
+          <div>gourmet ice cream</div>
         </div>
 
         <div className={styles.gridParent}>
@@ -90,24 +90,53 @@ export default function Home() {
               imageLogo="./brand3.png"
               imageCover="./photo12.jpg"
               waveColor="#6c3d26"
-              bodyText="Brand logos are being used for non commercial purposes only. This is a private project for learning web development only. This website is not for commercial use."
+              bodyText="Brand logos are being used for non commercial purposes only. This is a private project for learning web development. This website is not for commercial use."
             />
           </div>
         </div>
         <div className={styles.tagline}>
+          <h4>about us</h4>
+        </div>
+
+        <div className={styles.lessonLearned}>
+          <div className={styles.listImage}>
+            <img src="/lessons.png"></img>
+          </div>
+
+          <div className={styles.listItems}>
+            <h4>Concepts learned and demonstrated</h4>
+            <ul>
+              <li>Responsive web design</li>
+              <li>Mobile friendly layout</li>
+              <li>React functional card components</li>
+              <li>Refactoring cards for re-use</li>
+              <li>Introduction to SVG waves, overlays and SVG gotchas</li>
+              <li>CSS positioning: relative, absolute</li>
+              <li>CSS negative margins</li>
+              <li>CSS Neomorphism box shadows</li>
+              <li>Cross browser testing</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className={styles.tagline}>
           <h4>contact us</h4>
         </div>
       </div>
+
       <ContactUsFooter />
 
-      <h3>2021 Web Dev Project Concept only, by AG</h3>
-      <p>This is not a real website!!!!</p>
-      <p>
-        Laborum cupidatat voluptate eu esse ad proident veniam anim voluptate.
-        Excepteur eu voluptate amet in deserunt aute cillum. Ad Lorem
-        exercitation pariatur quis deserunt commodo cillum qui tempor deserunt
-        est officia esse.
-      </p>
+      <div className={styles.footerBlock}>
+        <h3>2021 Web Dev Project Concept only, by AG</h3>
+        <p>This website is project for demo and self studies only!!!!</p>
+        <p>
+          Laborum cupidatat voluptate eu esse ad proident veniam anim voluptate.
+          Excepteur eu voluptate amet in deserunt aute cillum. Ad Lorem
+          exercitation pariatur quis deserunt commodo cillum qui tempor deserunt
+          est officia esse.
+        </p>
+        <p>🍦🍦🍦 Worst logo ever 🍦🍦🍦</p>
+      </div>
       <div className={styles.footer}>
         <div className={styles.wave}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
