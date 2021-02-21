@@ -21,7 +21,6 @@ export default function Home() {
           </svg>
         </div>
       </div>
-      {/* <br></br> */}
 
       <div className={styles.mainContent}>
         <div className={styles.logoHeader}>
